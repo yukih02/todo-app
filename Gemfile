@@ -21,6 +21,16 @@ gem "importmap-rails"
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 gem "turbo-rails"
 
+gem 'faker'
+
+gem "annotate"
+gem "hamlit"
+gem "rubocop-rails"
+gem "better_errors"
+gem 'binding_of_caller'
+gem "devise"
+gem "aws-sdk-s3" , require: false
+
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails"
 
@@ -51,6 +61,9 @@ gem "bootsnap", require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  gem "erb2haml"
+  gem "pry-byebug"
+  gem "dotenv-rails"
 end
 
 group :development do
