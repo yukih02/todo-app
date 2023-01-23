@@ -8,10 +8,15 @@
     = csp_meta_tag
     = stylesheet_link_tag "application", "data-turbo-track": "reload"
     = javascript_importmap_tags
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   %body
     %header.header
       .header_logos
         %p.header_pageTitle
           = link_to 'Borads', root_path
     %hr
+    - if flash.present?
+      .flash
+        - flash.each do |key,value|
+          %div{:class => key}= value
     = yield

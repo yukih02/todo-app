@@ -1,6 +1,8 @@
 @import 'form';
 @import 'buttons';
 @import 'header';
+@import 'card';
+@import 'board';
 
 html {
     word-spacing: 1px;
@@ -24,6 +26,13 @@ a {
 
     h2 {
         margin-top: 50px;
+    }
+
+    .tab{
+        font-weight: 800;
+        font-size: 26px;
+        line-height: 36px;
+        margin-bottom: 40px;
     }
 }
 
