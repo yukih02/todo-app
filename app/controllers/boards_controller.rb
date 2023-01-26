@@ -38,6 +38,12 @@ class BoardsController < ApplicationController
         end
     end
 
+    def destroy
+        board = current_user.boards.find(params[:id])
+        board.destroy!
+        redirect_to root_path, notice: '削除に成功しました', status: :see_other
+    end
+
     private
     def board_params
         params.require(:board).permit(:title, :content, :eyecatch)
