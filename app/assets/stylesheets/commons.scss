@@ -1,10 +1,14 @@
-.title{
-    display: flex;
-}
 
-.board_actions{
-    margin-left: 100px;
-    margin-top: 30px;
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+.board_detail_actions{
+    position: absolute;
+    top: 80px;
+    right: 20px;
 
 }
 
@@ -13,6 +17,11 @@
     min-width: 60px;
     background-color: white;
     z-index: 1;
+
+    &.mini {
+        width: 70px;
+        word-wrap: break-word;
+    }
 }
 
   .dropdown:hover .dropdown-content {
